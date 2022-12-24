@@ -1,0 +1,15 @@
+enum RoutePath {
+  // For example
+
+  Main = '/',
+  Other = '*',
+}
+
+interface Route {
+  path: RoutePath;
+  element: JSX.Element;
+}
+
+const ROUTES: Route[] = [];
+
+export default ROUTES;

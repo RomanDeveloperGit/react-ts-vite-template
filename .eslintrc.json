@@ -1,0 +1,53 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+		"prettier"
+	],
+  "parser": "@typescript-eslint/parser",
+	"parserOptions": {
+    "project": ["./tsconfig.json"],
+    "ecmaFeatures": {
+      "jsx": true
+    },
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "prettier"],
+  "ignorePatterns": ["*.js", "*.jsx"],
+	"rules": {
+		"max-len": ["error", {
+			"code": 100,
+			"ignoreComments": true,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true,
+			"ignoreUrls": true,
+			"ignoreRegExpLiterals": true
+		}],
+		"no-plusplus": ["error", {
+			"allowForLoopAfterthoughts": true
+		}],
+		"no-console": "off",
+    "no-shadow": "off",
+		"consistent-return": "off",
+    "default-param-last": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+		"prettier/prettier": "error"
+	}
+}
