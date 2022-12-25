@@ -53,7 +53,6 @@
     "prettier": "^2.8.1",
     "prettier-plugin-organize-imports": "^3.2.1",
     "stylelint": "^14.16.0",
-    "stylelint-config-idiomatic-order": "^9.0.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-order": "^5.0.0",
