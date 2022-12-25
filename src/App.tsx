@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import 'normalize.css';
+
 import './assets/styles/index.scss';
 
 const App: FC = () => {
