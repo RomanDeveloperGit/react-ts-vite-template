@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 
-import legacy from '@vitejs/plugin-legacy';
 import react from '@vitejs/plugin-react';
+import legacy from '@vitejs/plugin-legacy';
 
+import tsconfigPaths from 'vite-tsconfig-paths';
 import sassDeclarations from 'vite-plugin-sass-dts';
 
 export default defineConfig(({ mode }) => {
@@ -22,8 +23,9 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      react(),
+      tsconfigPaths(),
       sassDeclarations(),
+      react(),
       legacy({
         targets: ['defaults', 'not IE 11'],
       }),
