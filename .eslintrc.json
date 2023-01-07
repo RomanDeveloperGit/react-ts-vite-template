@@ -51,6 +51,12 @@
     "default-param-last": "off",
     "import/prefer-default-export": "off",
     "import/extensions": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.ts", "**/*.test.tsx"]
+      }
+    ],
     "import/no-unresolved": "off",
     "react/function-component-definition": "off",
     "react/button-has-type": "off",
