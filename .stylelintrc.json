@@ -9,7 +9,9 @@
     "stylelint-prettier"
   ],
   "rules": {
+    "max-line-length": 100,
     "color-hex-length": "long",
+    "color-function-notation": "legacy",
     "string-quotes": "single",
     "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
     "declaration-empty-line-before": null,
@@ -274,8 +276,12 @@
             "background-blend-mode"
           ]
         },
-        "box-decoration-break",
-        "box-shadow",
+        {
+          "properties": [
+            "box-decoration-break",
+            "box-shadow"
+          ]
+        },
         {
           "noEmptyLineBetween": true,
           "emptyLineBefore": "always",
@@ -373,22 +379,7 @@
         "transform-origin-y",
         "transform-origin-z",
         "transform-style",
-        "transition",
-        "transition-property",
-        "transition-duration",
-        "transition-delay",
-        "transition-timing-function",
-        "animation",
-        "animation-name",
-        "animation-duration",
-        "animation-delay",
-        "animation-timing-function",
-        "animation-iteration-count",
-        "animation-direction",
-        "animation-fill-mode",
-        "animation-play-state",
         "will-change",
-        "cursor",
         "pointer-events",
         "touch-action",
         "user-drag",
@@ -402,6 +393,7 @@
         "scroll-snap-type",
         "scroll-snap-type-x",
         "scroll-snap-type-y",
+        "cursor",
         "opacity",
         {
           "emptyLineBefore": "always",
@@ -429,6 +421,25 @@
             "margin-bottom-collapse",
             "margin-before-collapse",
             "margin-after-collapse"
+          ]
+        },
+        {
+          "emptyLineBefore": "always",
+          "properties": [
+            "animation",
+            "animation-name",
+            "animation-duration",
+            "animation-delay",
+            "animation-timing-function",
+            "animation-iteration-count",
+            "animation-direction",
+            "animation-fill-mode",
+            "animation-play-state",
+            "transition",
+            "transition-property",
+            "transition-duration",
+            "transition-delay",
+            "transition-timing-function"
           ]
         }
       ],
