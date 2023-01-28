@@ -3,4 +3,10 @@
 node_modules
 package-lock.json
 
+.yarn
+yarn.lock
+
+.pnp.cjs
+.pnp.loader.mjs
+
 .env
